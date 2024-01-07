@@ -1,0 +1,134 @@
+/* Write some CSS below */
+
+body	{
+	font-family: 'Overpass', sans-serif;
+	font-size: 18px;
+	color: rgb(30, 30, 30, 1.0);
+	background-color: rgb(230, 230, 230, 1.0);
+	margin: 0px;
+}
+
+h1, h2, h3 {
+	color: rgb(30, 30, 30, 1.0);
+	font-family: 'Chivo', sans-serif;
+
+}
+
+p {
+	color: #404042;
+}
+a {
+	color: #0d1ec6;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .3s;
+}
+a:hover {
+  background-color: #0d1ec6;
+}
+
+/* Custom class design */
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+.btn-blue {
+	background-color: blue;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	display: inline-block;
+  	text-decoration: none;
+  	transition: .3s;
+}
+
+.btn-blue:hover {
+	background-color: #0D1EC6;
+  	color: white;
+}
+
+.banner	{
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding: 200px 0px;
+}
+.banner h1 {
+	color: white;
+	font-size: 45px;
+	margin: 0;
+}
+.banner p {
+	font-size: 24px;
+	color: white;
+	opacity: .4;
+	margin-bottom: 40px;
+}
+.cards {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-gap: 16px;
+}
+.card-white {
+	background-color: white;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	width: auto;
+  	text-align: center;
+ 	padding: 24px;
+  	margin: 10px;
+  	margin-bottom: 30px;
+}
+.card-white img {
+	width: 180px;
+  	height: 180px;
+  	object-fit: cover;
+  	border-radius: 4px;
+}
+.card-white h3 {
+  	margin-bottom: 0;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+
+.footer {
+	background: #404042;
+	text-align: center;
+	padding: 24px 0;
+}
+.footer p {
+  color: white;
+}
